@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     pub2 = node.advertise<std_msgs::Float64>("vrep/vehicle/motorRightSpeed",1);
     ros::Rate loop_rate(60);
     
-    ros::Subscriber sub_avd = node.subscribe<geometry_msgs::Twist>("ros_Sonar",1,callback);
+    ros::Subscriber sub_avd = node.subscribe<geometry_msgs::Twist>("/cmd_vel",1,callback);
     std_msgs::Float64 w_right;
     std_msgs::Float64 w_left;
     
