@@ -1,0 +1,4 @@
+<launch>
+	<node name="kine"	pkg="kine_controller"	type="kineCtrl"	/>
+	<node name="sonars"	pkg="plusonars"		type="controlsonar" />
+</launch>
